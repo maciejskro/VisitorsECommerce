@@ -5,6 +5,7 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.junit.MockitoJUnit;
 import org.mockito.junit.MockitoRule;
+import pl.sda.visitors.Controler.WeightVisitor;
 import pl.sda.visitors.Entity.Book;
 import pl.sda.visitors.Entity.Items;
 
@@ -78,7 +79,6 @@ public class WeightVisiotrTest {
         for (Items i : listItems) {
             visitorTest.visit(i);
         }
-        //visitorTest.getTotalWeight();
 
         assertThat(visitorTest.getTotalWeight()).isEqualTo(3.33);
     }
