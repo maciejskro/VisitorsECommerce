@@ -8,10 +8,10 @@ public class WeightVisitor implements Visitor {
     private double totalWeight;
     @Override
     public void visit(Items items) {
-        totalWeight =+ items.getWeight();
+        totalWeight = totalWeight + ((items == null)? 0.0 : items.getWeight())  ;
     }
 
-    public Double getTotalWheit() {
+    public Double getTotalWeight() {
         return this.totalWeight;
     }
 }
