@@ -1,4 +1,4 @@
-package pl.sda.decorator.Entity;
+package pl.sda.visitors.Entity;
 
 public class Book extends Items implements Visitable{
 

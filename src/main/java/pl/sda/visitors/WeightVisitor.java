@@ -1,7 +1,7 @@
-package pl.sda.decorator;
+package pl.sda.visitors;
 
-import pl.sda.decorator.Entity.Items;
-import pl.sda.decorator.Entity.Visitor;
+import pl.sda.visitors.Entity.Items;
+import pl.sda.visitors.Entity.Visitor;
 
 public class WeightVisitor implements Visitor {
 
@@ -9,5 +9,9 @@ public class WeightVisitor implements Visitor {
     @Override
     public void visit(Items items) {
         totalWeight =+ items.getWeight();
+    }
+
+    public Double getTotalWheit() {
+        return this.totalWeight;
     }
 }
