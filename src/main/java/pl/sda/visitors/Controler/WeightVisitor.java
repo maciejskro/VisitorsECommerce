@@ -1,4 +1,4 @@
-package pl.sda.visitors;
+package pl.sda.visitors.Controler;
 
 import pl.sda.visitors.Entity.Items;
 import pl.sda.visitors.Entity.Visitor;
